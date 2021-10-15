@@ -11,4 +11,5 @@ new Vue({
   store,
   vuetify,
   render: (h) => h(App),
+  beforeCreate: () => store.commit("load"),
 }).$mount("#app");
